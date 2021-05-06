@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PARIWISATA</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+	<header>
+		<div class="main">
+			<ul>
+				<li><a href="index_nama.html">Home</li>
+				<li><a href="galery.html">Galery</li>
+				<li class="active"><a href="about.html">About</li>
+
+			</ul>
+		</div>
+		<div class="title">
+			<h1>About</h1>
+		</div>
+
+    <br><br>
+
+    <form>
+        <label>Wisata</label>
+        <br><br>
+        <input type="text" name="">
+
+        <br><br>
+
+        <label>Daerah</label>
+        <br><br>
+        <input type="password" name="" class="pass">
+
+        <br>
+
+
+        <input type="checkbox" name="" class="cbox"> Show Daerah
+
+        <br>
+
+        <button>Seacrh</button>
+
+        </form>
+
+        <script type="text/javascript">
+
+$(document).ready(function(){
+                
+                $('.cbox').click(function(){
+                    if($(this).is(':checked')){
+                        $('.pass').attr('type', 'text');
+                    }
+                    else{
+                        $('.pass').attr('type', 'password');
+                    }
+                   
+                })
+            });
+        
+        </script>
+
+	</header>
+	   
+	
+<div class="Right">Copyright &copy;2020 - NHlzaa. All Right Reserved</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCxaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV" crossorigin></script>
+
+
+
+</body>
+</html>
